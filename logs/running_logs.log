@@ -1,3 +1,122 @@
 [2026-02-28 19:49:59,966: INFO: main: Welcome to our custom logging]
 [2026-02-28 21:22:24,526: INFO: main: Welcome to our custom logging]
 [2026-02-28 21:23:05,161: INFO: main: Welcome to our custom logging]
+[2026-03-01 14:54:08,078: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 14:54:08,081: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 14:54:08,082: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 14:54:08,083: INFO: common: created directory at: artifacts]
+[2026-03-01 14:54:08,084: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 14:54:08,217: ERROR: main: HTTP Error 404: Not Found]
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 14, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\data_ingestion.py", line 20, in download_file
+    filename, headers = request.urlretrieve(
+                        ~~~~~~~~~~~~~~~~~~~^
+        url = self.config.source_URL,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        filename = self.config.local_data_file
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 212, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ~~~~~~~^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2026-03-01 15:17:59,032: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 15:17:59,034: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 15:17:59,036: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 15:17:59,036: INFO: common: created directory at: artifacts]
+[2026-03-01 15:17:59,037: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 15:17:59,054: ERROR: main: unknown url type: 'summarizer-data.zip']
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 14, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\data_ingestion.py", line 20, in download_file
+    filename, headers = request.urlretrieve(
+                        ~~~~~~~~~~~~~~~~~~~^
+        url = self.config.source_URL,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        filename = self.config.local_data_file
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 212, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ~~~~~~~^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 471, in open
+    req = Request(fullurl, data)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 290, in __init__
+    self.full_url = url
+    ^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 316, in full_url
+    self._parse()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 345, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'summarizer-data.zip'
+[2026-03-01 15:19:03,450: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 15:19:03,452: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 15:19:03,454: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 15:19:03,454: INFO: common: created directory at: artifacts]
+[2026-03-01 15:19:03,455: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 15:19:03,474: ERROR: main: unknown url type: 'summarizer-data.zip']
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 14, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\data_ingestion.py", line 20, in download_file
+    filename, headers = request.urlretrieve(
+                        ~~~~~~~~~~~~~~~~~~~^
+        url = self.config.source_URL,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        filename = self.config.local_data_file
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 212, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ~~~~~~~^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 471, in open
+    req = Request(fullurl, data)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 290, in __init__
+    self.full_url = url
+    ^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 316, in full_url
+    self._parse()
+    ~~~~~~~~~~~^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 345, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'summarizer-data.zip'
