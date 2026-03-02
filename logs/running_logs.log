@@ -120,3 +120,1960 @@ Traceback (most recent call last):
   File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 345, in _parse
     raise ValueError("unknown url type: %r" % self.full_url)
 ValueError: unknown url type: 'summarizer-data.zip'
+[2026-03-01 15:25:31,694: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 15:25:31,696: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 15:25:31,697: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 15:25:31,698: INFO: common: created directory at: artifacts]
+[2026-03-01 15:25:31,698: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 15:25:31,888: ERROR: main: HTTP Error 404: Not Found]
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 14, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\data_ingestion.py", line 20, in download_file
+    filename, headers = request.urlretrieve(
+                        ~~~~~~~~~~~~~~~~~~~^
+        url = self.config.source_URL,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        filename = self.config.local_data_file
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 212, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ~~~~~~~^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2026-03-01 15:28:19,683: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 15:28:19,685: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 15:28:19,687: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 15:28:19,687: INFO: common: created directory at: artifacts]
+[2026-03-01 15:28:19,688: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 15:28:19,827: ERROR: main: HTTP Error 404: Not Found]
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 14, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\data_ingestion.py", line 20, in download_file
+    filename, headers = request.urlretrieve(
+                        ~~~~~~~~~~~~~~~~~~~^
+        url = self.config.source_URL,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        filename = self.config.local_data_file
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 212, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ~~~~~~~^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2026-03-01 15:33:08,969: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 15:33:08,971: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 15:33:08,973: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 15:33:08,973: INFO: common: created directory at: artifacts]
+[2026-03-01 15:33:08,974: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 15:33:08,974: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_ingestion/data.zip']
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 14, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\data_ingestion.py", line 39, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\zipfile\__init__.py", line 1453, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/data.zip'
+[2026-03-01 15:36:47,373: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 15:36:47,375: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 15:36:47,377: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 15:36:47,377: INFO: common: created directory at: artifacts]
+[2026-03-01 15:36:47,378: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 15:36:47,488: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 16:16:29,078: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 16:16:29,081: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 16:16:29,082: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 16:16:29,083: INFO: common: created directory at: artifacts]
+[2026-03-01 16:16:29,083: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 16:16:29,192: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 16:16:29,192: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 16:16:29,194: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 16:16:29,196: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 16:16:29,196: INFO: common: created directory at: artifacts]
+[2026-03-01 16:16:29,197: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 16:16:29,199: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 16:40:55,877: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 16:40:55,880: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 16:40:55,881: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 16:40:55,882: INFO: common: created directory at: artifacts]
+[2026-03-01 16:40:55,882: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 16:40:55,993: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 16:40:55,993: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 16:40:55,995: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 16:40:55,997: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 16:40:55,997: INFO: common: created directory at: artifacts]
+[2026-03-01 16:40:55,998: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 16:40:55,999: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 16:40:55,999: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 16:40:56,000: ERROR: main: name 'DataTransformationTrainingPipelinene' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 36, in <module>
+    data_transformation = DataTransformationTrainingPipelinene()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'DataTransformationTrainingPipelinene' is not defined. Did you mean: 'DataTransformationTrainingPipeline'?
+[2026-03-01 16:42:39,938: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 16:42:39,941: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 16:42:39,942: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 16:42:39,943: INFO: common: created directory at: artifacts]
+[2026-03-01 16:42:39,943: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 16:42:40,044: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 16:42:40,045: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 16:42:40,047: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 16:42:40,048: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 16:42:40,049: INFO: common: created directory at: artifacts]
+[2026-03-01 16:42:40,049: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 16:42:40,050: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 16:42:40,051: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 16:42:40,052: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 16:42:40,054: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 16:42:40,055: INFO: common: created directory at: artifacts]
+[2026-03-01 16:42:40,055: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 16:42:40,196: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 16:42:40,209: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 16:42:40,251: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 16:42:40,309: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 16:42:40,339: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 16:42:40,378: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 16:42:40,425: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 16:42:40,466: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 16:42:40,505: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/spiece.model "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 16:42:40,537: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/spiece.model "HTTP/1.1 200 OK"]
+[2026-03-01 16:42:40,575: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/spiece.model "HTTP/1.1 200 OK"]
+[2026-03-01 16:42:40,731: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer.json "HTTP/1.1 404 Not Found"]
+[2026-03-01 16:42:40,732: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-01 16:42:40,779: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"]
+[2026-03-01 16:42:40,823: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 16:42:40,857: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/special_tokens_map.json "HTTP/1.1 200 OK"]
+[2026-03-01 16:42:40,895: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/special_tokens_map.json "HTTP/1.1 200 OK"]
+[2026-03-01 16:42:40,940: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"]
+[2026-03-01 16:42:42,883: ERROR: main: PegasusTokenizer has no attribute as_target_tokenizer]
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 37, in <module>
+    data_transformation.main()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\data_transformation.py", line 30, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched = True)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\datasets\dataset_dict.py", line 953, in map
+    dataset_dict[split] = dataset.map(
+                          ~~~~~~~~~~~^
+        function=function,
+        ^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        try_original_type=try_original_type,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\datasets\arrow_dataset.py", line 562, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\datasets\arrow_dataset.py", line 3406, in map
+    for rank, done, content in Dataset._map_single(**unprocessed_kwargs):
+                               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\datasets\arrow_dataset.py", line 3759, in _map_single
+    for i, batch in iter_outputs(shard_iterable):
+                    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\datasets\arrow_dataset.py", line 3712, in iter_outputs
+    yield i, apply_function(example, i, offset=offset)
+             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\datasets\arrow_dataset.py", line 3635, in apply_function
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\data_transformation.py", line 18, in convert_examples_to_features
+    with self.tokenizer.as_target_tokenizer():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\tokenization_utils_base.py", line 1291, in __getattr__
+    raise AttributeError(f"{self.__class__.__name__} has no attribute {key}")
+AttributeError: PegasusTokenizer has no attribute as_target_tokenizer
+[2026-03-01 16:44:07,310: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 16:44:07,312: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 16:44:07,313: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 16:44:07,314: INFO: common: created directory at: artifacts]
+[2026-03-01 16:44:07,314: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 16:44:07,412: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 16:44:07,413: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 16:44:07,415: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 16:44:07,416: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 16:44:07,416: INFO: common: created directory at: artifacts]
+[2026-03-01 16:44:07,417: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 16:44:07,419: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 16:44:07,419: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 16:44:07,421: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 16:44:07,423: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 16:44:07,423: INFO: common: created directory at: artifacts]
+[2026-03-01 16:44:07,424: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 16:44:07,525: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 16:44:07,537: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 16:44:07,591: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 16:44:07,601: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 16:44:07,646: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 16:44:07,691: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 16:44:12,456: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:12:16,205: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 17:12:16,208: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:12:16,209: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:12:16,210: INFO: common: created directory at: artifacts]
+[2026-03-01 17:12:16,210: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 17:12:16,316: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:12:16,317: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 17:12:16,319: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:12:16,320: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:12:16,321: INFO: common: created directory at: artifacts]
+[2026-03-01 17:12:16,322: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 17:12:16,324: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:12:16,324: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 17:12:16,326: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:12:16,328: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:12:16,329: INFO: common: created directory at: artifacts]
+[2026-03-01 17:12:16,331: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 17:12:16,446: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:12:16,456: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:12:16,809: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:12:16,821: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:12:16,869: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:12:16,953: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:12:19,393: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:12:19,393: INFO: main: >>>>>> stage Model training stage started <<<<<<]
+[2026-03-01 17:12:19,395: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:12:19,397: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:12:19,398: INFO: common: created directory at: artifacts]
+[2026-03-01 17:12:19,398: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-01 17:12:19,438: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:12:19,449: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:12:19,499: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:12:19,510: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:12:19,551: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:12:19,602: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:12:19,827: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:12:19,839: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:12:19,915: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:12:19,961: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors.index.json "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:12:20,007: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"]
+[2026-03-01 17:12:21,021: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/xet-read-token/40d588fdab0cc077b80d950b300bf66ad3c75b92 "HTTP/1.1 200 OK"]
+[2026-03-01 17:13:11,931: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:13:11,976: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"]
+[2026-03-01 17:13:12,069: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"]
+[2026-03-01 17:13:12,883: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"]
+[2026-03-01 17:13:13,052: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"]
+[2026-03-01 17:13:13,196: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:13:13,422: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"]
+[2026-03-01 17:13:13,907: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/xet-read-token/7db4e727842ad86cc5cdfeaef4d14c6fb2b46511 "HTTP/1.1 200 OK"]
+[2026-03-01 17:13:30,444: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:13:30,608: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:13:30,757: INFO: _client: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:13:31,095: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 47, in <module>
+    model_trainer.main()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\model_trainer.py", line 35, in train
+    trainer_args = TrainingArguments(
+        output_dir=self.config.root_dir, num_train_epochs=1, warmup_steps=500,
+    ...<3 lines>...
+        gradient_accumulation_steps=16
+    )
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2026-03-01 17:22:04,304: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 17:22:04,307: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:22:04,309: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:22:04,310: INFO: common: created directory at: artifacts]
+[2026-03-01 17:22:04,310: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 17:22:04,435: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:22:04,435: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 17:22:04,438: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:22:04,439: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:22:04,440: INFO: common: created directory at: artifacts]
+[2026-03-01 17:22:04,441: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 17:22:04,443: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:22:04,443: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 17:22:04,446: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:22:04,448: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:22:04,449: INFO: common: created directory at: artifacts]
+[2026-03-01 17:22:04,449: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 17:22:04,557: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:22:04,571: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:04,655: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:22:04,675: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:04,731: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:22:04,776: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:07,660: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:22:07,661: INFO: main: >>>>>> stage Model training stage started <<<<<<]
+[2026-03-01 17:22:07,664: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:22:07,666: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:22:07,666: INFO: common: created directory at: artifacts]
+[2026-03-01 17:22:07,668: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-01 17:22:07,719: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:22:07,735: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:07,787: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:22:07,800: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:07,854: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:22:07,905: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:08,155: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:22:08,171: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:08,242: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:22:08,244: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-01 17:22:08,292: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:08,364: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:08,953: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:09,094: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:09,232: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:22:09,385: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"]
+[2026-03-01 17:22:18,064: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:22:18,079: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:22:18,158: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=1.1.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=1.1.0'`]
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 47, in <module>
+    model_trainer.main()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\model_trainer.py", line 35, in train
+    trainer_args = TrainingArguments(
+        output_dir=self.config.root_dir, num_train_epochs=1, warmup_steps=500,
+    ...<3 lines>...
+        gradient_accumulation_steps=16
+    )
+  File "<string>", line 112, in __init__
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\training_args.py", line 1573, in __post_init__
+    self.device
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\training_args.py", line 1853, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\functools.py", line 1126, in __get__
+    val = self.func(instance)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\training_args.py", line 1748, in _setup_devices
+    raise ImportError(
+    ...<2 lines>...
+    )
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=1.1.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=1.1.0'`
+[2026-03-01 17:23:17,666: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 17:23:17,668: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:23:17,670: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:23:17,671: INFO: common: created directory at: artifacts]
+[2026-03-01 17:23:17,671: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 17:23:17,768: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:23:17,768: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 17:23:17,770: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:23:17,771: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:23:17,772: INFO: common: created directory at: artifacts]
+[2026-03-01 17:23:17,772: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 17:23:17,774: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:23:17,775: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 17:23:17,777: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:23:17,778: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:23:17,779: INFO: common: created directory at: artifacts]
+[2026-03-01 17:23:17,780: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 17:23:17,896: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:23:17,907: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:17,960: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:23:17,972: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:18,019: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:23:18,064: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:20,242: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:23:20,242: INFO: main: >>>>>> stage Model training stage started <<<<<<]
+[2026-03-01 17:23:20,244: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:23:20,246: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:23:20,246: INFO: common: created directory at: artifacts]
+[2026-03-01 17:23:20,247: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-01 17:23:20,288: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:23:20,299: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:20,343: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:23:20,356: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:20,404: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:23:20,456: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:20,643: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:23:20,644: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-01 17:23:20,665: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:20,723: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:23:20,766: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:20,834: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:21,331: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:21,455: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:21,543: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:23:21,693: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"]
+[2026-03-01 17:23:26,387: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:23:26,399: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:23:26,464: ERROR: main: Trainer.__init__() got an unexpected keyword argument 'tokenizer']
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 47, in <module>
+    model_trainer.main()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\model_trainer.py", line 43, in train
+    trainer = Trainer(model=model_pegasus, args=trainer_args,
+              tokenizer=tokenizer, data_collator=seq2seq_data_collator,
+              train_dataset=dataset_samsum_pt["test"],
+              eval_dataset=dataset_samsum_pt["validation"])
+TypeError: Trainer.__init__() got an unexpected keyword argument 'tokenizer'
+[2026-03-01 17:28:12,829: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 17:28:12,832: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:28:12,833: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:28:12,834: INFO: common: created directory at: artifacts]
+[2026-03-01 17:28:12,834: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 17:28:12,964: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:28:12,964: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 17:28:12,966: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:28:12,968: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:28:12,969: INFO: common: created directory at: artifacts]
+[2026-03-01 17:28:12,970: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 17:28:12,972: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:28:12,972: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 17:28:12,975: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:28:12,977: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:28:12,978: INFO: common: created directory at: artifacts]
+[2026-03-01 17:28:12,978: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 17:28:13,088: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:28:13,089: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-01 17:28:13,104: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:13,155: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:28:13,166: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:13,214: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:28:13,257: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:16,082: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:28:16,082: INFO: main: >>>>>> stage Model training stage started <<<<<<]
+[2026-03-01 17:28:16,085: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:28:16,088: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:28:16,089: INFO: common: created directory at: artifacts]
+[2026-03-01 17:28:16,090: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-01 17:28:16,133: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:28:16,145: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:16,186: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:28:16,196: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:16,250: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:28:16,293: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:16,527: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:28:16,543: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:16,603: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:28:16,656: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:16,726: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:17,151: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:17,285: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:17,384: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:28:17,566: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"]
+[2026-03-01 17:28:24,164: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:28:24,184: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:28:24,237: ERROR: main: Trainer.__init__() got an unexpected keyword argument 'tprocessing_class'. Did you mean 'processing_class'?]
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 47, in <module>
+    model_trainer.main()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\model_trainer.py", line 43, in train
+    trainer = Trainer(model=model_pegasus, args=trainer_args,
+              tprocessing_class=tokenizer, data_collator=seq2seq_data_collator,
+              train_dataset=dataset_samsum_pt["test"],
+              eval_dataset=dataset_samsum_pt["validation"])
+TypeError: Trainer.__init__() got an unexpected keyword argument 'tprocessing_class'. Did you mean 'processing_class'?
+[2026-03-01 17:29:02,095: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 17:29:02,098: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:29:02,100: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:29:02,101: INFO: common: created directory at: artifacts]
+[2026-03-01 17:29:02,102: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 17:29:02,238: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:29:02,238: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 17:29:02,241: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:29:02,243: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:29:02,243: INFO: common: created directory at: artifacts]
+[2026-03-01 17:29:02,244: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 17:29:02,247: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:29:02,247: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 17:29:02,250: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:29:02,252: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:29:02,253: INFO: common: created directory at: artifacts]
+[2026-03-01 17:29:02,254: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 17:29:02,356: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:29:02,371: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:02,415: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:29:02,425: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:02,472: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:29:02,521: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:05,238: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:29:05,239: INFO: main: >>>>>> stage Model training stage started <<<<<<]
+[2026-03-01 17:29:05,241: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:29:05,243: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:29:05,244: INFO: common: created directory at: artifacts]
+[2026-03-01 17:29:05,244: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-01 17:29:05,310: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:29:05,312: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-01 17:29:05,325: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:05,372: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:29:05,384: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:05,430: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:29:05,477: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:05,689: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:29:05,700: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:05,751: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:29:05,798: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:06,056: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:06,181: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:06,265: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"]
+[2026-03-01 17:29:06,334: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:29:06,454: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"]
+[2026-03-01 17:29:13,447: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:29:13,457: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:54,633: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 17:58:54,637: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:58:54,639: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:58:54,640: INFO: common: created directory at: artifacts]
+[2026-03-01 17:58:54,641: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 17:58:54,757: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:58:54,757: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 17:58:54,759: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:58:54,761: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:58:54,761: INFO: common: created directory at: artifacts]
+[2026-03-01 17:58:54,762: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 17:58:54,764: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:58:54,764: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 17:58:54,767: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:58:54,769: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:58:54,770: INFO: common: created directory at: artifacts]
+[2026-03-01 17:58:54,772: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 17:58:54,939: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:58:54,959: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:55,020: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:58:55,021: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-01 17:58:55,036: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:55,081: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:58:55,125: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:57,930: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 17:58:57,931: INFO: main: >>>>>> stage Model training stage started <<<<<<]
+[2026-03-01 17:58:57,933: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 17:58:57,935: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 17:58:57,936: INFO: common: created directory at: artifacts]
+[2026-03-01 17:58:57,936: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-01 17:58:57,976: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:58:57,992: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:58,044: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:58:58,056: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:58,102: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:58:58,146: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:58,345: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:58:58,355: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:58,414: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:58:58,458: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:58,525: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:58,950: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:59,091: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"]
+[2026-03-01 17:58:59,210: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"]
+[2026-03-01 17:58:59,363: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"]
+[2026-03-01 17:59:04,873: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 17:59:04,883: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:02:59,726: INFO: main: >>>>>> stage Model training stage completed <<<<<<
+
+x==========x]
+[2026-03-01 21:28:19,523: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 21:28:19,526: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:28:19,528: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:28:19,528: INFO: common: created directory at: artifacts]
+[2026-03-01 21:28:19,529: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 21:28:19,633: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 21:28:19,633: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 21:28:19,635: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:28:19,637: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:28:19,637: INFO: common: created directory at: artifacts]
+[2026-03-01 21:28:19,638: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 21:28:19,640: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 21:28:19,641: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 21:28:19,643: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:28:19,645: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:28:19,646: INFO: common: created directory at: artifacts]
+[2026-03-01 21:28:19,647: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 21:28:19,800: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 21:28:19,814: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:19,868: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 21:28:19,870: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-01 21:28:19,884: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:19,942: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 21:28:20,002: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:22,325: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 21:28:22,326: INFO: main: >>>>>> stage Model training stage started <<<<<<]
+[2026-03-01 21:28:22,328: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:28:22,330: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:28:22,331: INFO: common: created directory at: artifacts]
+[2026-03-01 21:28:22,332: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-01 21:28:22,441: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 21:28:22,453: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:22,499: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 21:28:22,515: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:22,571: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 21:28:22,620: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:22,823: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 21:28:22,835: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:22,900: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"]
+[2026-03-01 21:28:22,950: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:23,375: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/main "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:23,478: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/discussions?p=0 "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:23,598: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/commits/refs%2Fpr%2F12 "HTTP/1.1 200 OK"]
+[2026-03-01 21:28:23,683: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors.index.json "HTTP/1.1 404 Not Found"]
+[2026-03-01 21:28:23,904: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/refs%2Fpr%2F12/model.safetensors "HTTP/1.1 302 Found"]
+[2026-03-01 21:28:31,320: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 21:28:31,336: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:45:40,172: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 21:45:40,176: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:45:40,178: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:45:40,178: INFO: common: created directory at: artifacts]
+[2026-03-01 21:45:40,179: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 21:45:40,289: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 21:45:40,289: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 21:45:40,291: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:45:40,293: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:45:40,293: INFO: common: created directory at: artifacts]
+[2026-03-01 21:45:40,294: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 21:45:40,296: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 21:45:40,296: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 21:45:40,298: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:45:40,300: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:45:40,300: INFO: common: created directory at: artifacts]
+[2026-03-01 21:45:40,301: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 21:45:40,405: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 21:45:40,421: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:45:40,483: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 21:45:40,500: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:45:40,559: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 21:45:40,614: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 21:45:43,254: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 21:45:43,255: INFO: main: *******************]
+[2026-03-01 21:45:43,255: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2026-03-01 21:45:43,257: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:45:43,259: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:45:43,260: INFO: common: created directory at: artifacts]
+[2026-03-01 21:45:43,260: ERROR: main: "'ConfigBox' object has no attribute 'model_evaluation'"]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'model_evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'model_evaluation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+AttributeError: 'ConfigBox' object has no attribute 'model_evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_evaluation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'model_evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'model_evaluation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+AttributeError: 'ConfigBox' object has no attribute 'model_evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 59, in <module>
+    model_evaluation.main()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_05_model_evaluation.py", line 12, in main
+    model_evaluation_config = config.get_model_evaluation_config()
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\config\configuration.py", line 95, in get_model_evaluation_config
+    config = self.config.model_evaluation
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_evaluation'"
+[2026-03-01 21:53:46,444: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 21:53:46,447: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:53:46,448: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:53:46,449: INFO: common: created directory at: artifacts]
+[2026-03-01 21:53:46,450: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 21:53:46,559: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 21:53:46,560: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 21:53:46,562: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:53:46,564: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:53:46,565: INFO: common: created directory at: artifacts]
+[2026-03-01 21:53:46,565: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 21:53:46,568: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 21:53:46,568: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 21:53:46,571: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:53:46,573: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:53:46,574: INFO: common: created directory at: artifacts]
+[2026-03-01 21:53:46,574: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 21:53:46,691: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 21:53:46,706: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:53:46,757: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 21:53:46,769: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 21:53:46,817: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 21:53:46,866: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 21:53:49,060: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 21:53:49,061: INFO: main: *******************]
+[2026-03-01 21:53:49,061: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2026-03-01 21:53:49,064: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 21:53:49,066: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 21:53:49,066: INFO: common: created directory at: artifacts]
+[2026-03-01 21:53:49,067: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 22:06:48,389: INFO: rouge_scorer: Using default tokenizer.]
+[2026-03-01 22:06:49,319: ERROR: main: 'numpy.float64' object has no attribute 'mid']
+Traceback (most recent call last):
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\main.py", line 59, in <module>
+    model_evaluation.main()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\stage_05_model_evaluation.py", line 14, in main
+    model_evaluation_config.evaluate()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\model_evaluation.py", line 76, in evaluate
+    rouge_dict = dict((rn, score[rn].mid.fmeasure ) for rn in rouge_names )
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\conponents\model_evaluation.py", line 76, in <genexpr>
+    rouge_dict = dict((rn, score[rn].mid.fmeasure ) for rn in rouge_names )
+                           ^^^^^^^^^^^^^
+AttributeError: 'numpy.float64' object has no attribute 'mid'. Did you mean: 'min'?
+[2026-03-01 22:32:44,364: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-01 22:32:44,367: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 22:32:44,369: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 22:32:44,370: INFO: common: created directory at: artifacts]
+[2026-03-01 22:32:44,370: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-01 22:32:44,484: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-01 22:32:44,485: INFO: main: >>>>>> stage Data validation stage started <<<<<<]
+[2026-03-01 22:32:44,487: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 22:32:44,489: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 22:32:44,490: INFO: common: created directory at: artifacts]
+[2026-03-01 22:32:44,490: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-01 22:32:44,493: INFO: main: >>>>>> stage Data validation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 22:32:44,493: INFO: main: >>>>>> stage Data transformation stage started <<<<<<]
+[2026-03-01 22:32:44,497: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 22:32:44,498: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 22:32:44,499: INFO: common: created directory at: artifacts]
+[2026-03-01 22:32:44,500: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-01 22:32:44,605: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 22:32:44,607: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-01 22:32:44,618: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"]
+[2026-03-01 22:32:44,665: INFO: _client: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-01 22:32:44,676: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-01 22:32:44,727: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-01 22:32:44,774: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-01 22:32:47,452: INFO: main: >>>>>> stage Data transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 22:32:47,453: INFO: main: *******************]
+[2026-03-01 22:32:47,453: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2026-03-01 22:32:47,457: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 22:32:47,459: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 22:32:47,460: INFO: common: created directory at: artifacts]
+[2026-03-01 22:32:47,461: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 22:52:24,736: INFO: rouge_scorer: Using default tokenizer.]
+[2026-03-01 22:52:26,580: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-03-01 22:55:49,037: INFO: server: Started server process [20060]]
+[2026-03-01 22:55:49,038: INFO: on: Waiting for application startup.]
+[2026-03-01 22:55:49,038: INFO: on: Application startup complete.]
+[2026-03-01 22:55:49,039: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-01 23:08:16,509: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:08:16,513: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:08:16,514: INFO: common: created directory at: artifacts]
+[2026-03-01 23:08:16,515: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 23:08:17,265: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 16, in predict
+    pipe = pipeline("summarization", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+                                                   ~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+        f"Unknown task {task}, available tasks are {self.get_supported_tasks() + ['translation_XX_to_YY']}"
+    )
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-03-01 23:10:39,132: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:10:39,135: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:10:39,136: INFO: common: created directory at: artifacts]
+[2026-03-01 23:10:39,138: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 23:10:40,005: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 16, in predict
+    pipe = pipeline("summarization", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+                                                   ~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+        f"Unknown task {task}, available tasks are {self.get_supported_tasks() + ['translation_XX_to_YY']}"
+    )
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-03-01 23:12:15,619: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:12:15,623: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:12:15,624: INFO: common: created directory at: artifacts]
+[2026-03-01 23:12:15,626: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 23:12:16,307: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 16, in predict
+    pipe = pipeline("summarization", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+                                                   ~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+        f"Unknown task {task}, available tasks are {self.get_supported_tasks() + ['translation_XX_to_YY']}"
+    )
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-03-01 23:13:14,166: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:13:14,170: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:13:14,173: INFO: common: created directory at: artifacts]
+[2026-03-01 23:13:14,175: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 23:13:14,917: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 16, in predict
+    pipe = pipeline("summarization", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+                                                   ~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+        f"Unknown task {task}, available tasks are {self.get_supported_tasks() + ['translation_XX_to_YY']}"
+    )
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-03-01 23:13:21,352: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:13:21,355: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:13:21,356: INFO: common: created directory at: artifacts]
+[2026-03-01 23:13:21,357: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 23:13:22,193: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 16, in predict
+    pipe = pipeline("summarization", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+                                                   ~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+        f"Unknown task {task}, available tasks are {self.get_supported_tasks() + ['translation_XX_to_YY']}"
+    )
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-03-01 23:30:35,607: INFO: server: Shutting down]
+[2026-03-01 23:30:35,722: INFO: on: Waiting for application shutdown.]
+[2026-03-01 23:30:35,723: INFO: on: Application shutdown complete.]
+[2026-03-01 23:30:35,725: INFO: server: Finished server process [20060]]
+[2026-03-01 23:31:12,428: INFO: server: Started server process [23856]]
+[2026-03-01 23:31:12,429: INFO: on: Waiting for application startup.]
+[2026-03-01 23:31:12,429: INFO: on: Application startup complete.]
+[2026-03-01 23:31:12,430: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-01 23:34:54,507: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:34:54,511: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:34:54,514: INFO: common: created directory at: artifacts]
+[2026-03-01 23:34:54,515: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 23:34:55,251: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 17, in predict
+    pipe = pipeline("text2text-generationon", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+                                                   ~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+        f"Unknown task {task}, available tasks are {self.get_supported_tasks() + ['translation_XX_to_YY']}"
+    )
+KeyError: "Unknown task text2text-generationon, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-03-01 23:37:51,953: INFO: server: Shutting down]
+[2026-03-01 23:37:52,058: INFO: on: Waiting for application shutdown.]
+[2026-03-01 23:37:52,060: INFO: on: Application shutdown complete.]
+[2026-03-01 23:37:52,060: INFO: server: Finished server process [23856]]
+[2026-03-01 23:38:42,852: INFO: server: Started server process [28384]]
+[2026-03-01 23:38:42,854: INFO: on: Waiting for application startup.]
+[2026-03-01 23:38:42,855: INFO: on: Application startup complete.]
+[2026-03-01 23:38:42,856: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-01 23:40:43,216: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:40:43,220: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:40:43,221: INFO: common: created directory at: artifacts]
+[2026-03-01 23:40:43,223: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 23:40:44,095: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 17, in predict
+    pipe = pipeline("text2text-generation", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+                                                   ~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+        f"Unknown task {task}, available tasks are {self.get_supported_tasks() + ['translation_XX_to_YY']}"
+    )
+KeyError: "Unknown task text2text-generation, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-03-01 23:43:15,574: INFO: server: Shutting down]
+[2026-03-01 23:43:15,677: INFO: on: Waiting for application shutdown.]
+[2026-03-01 23:43:15,677: INFO: on: Application shutdown complete.]
+[2026-03-01 23:43:15,678: INFO: server: Finished server process [28384]]
+[2026-03-01 23:43:31,519: INFO: server: Started server process [15468]]
+[2026-03-01 23:43:31,521: INFO: on: Waiting for application startup.]
+[2026-03-01 23:43:31,522: INFO: on: Application startup complete.]
+[2026-03-01 23:43:31,523: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-01 23:44:58,725: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:44:58,729: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:44:58,731: INFO: common: created directory at: artifacts]
+[2026-03-01 23:44:58,732: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 23:45:01,946: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 23, in predict
+    output = pipe(text, **gen_kwargs)[0]["summary_text"]
+             ~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\text_generation.py", line 293, in __call__
+    return super().__call__(text_inputs, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1274, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1281, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1173, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\text_generation.py", line 397, in _forward
+    output = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\generation\utils.py", line 2618, in generate
+    self._validate_generated_length(generation_config, input_ids_length, has_default_max_length)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\generation\utils.py", line 1700, in _validate_generated_length
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Input length of input_ids is 128, but `max_length` is set to 128. This can lead to unexpected behavior. You should consider increasing `max_length` or, better yet, setting `max_new_tokens`.
+[2026-03-01 23:47:02,386: INFO: server: Shutting down]
+[2026-03-01 23:47:02,496: INFO: on: Waiting for application shutdown.]
+[2026-03-01 23:47:02,497: INFO: on: Application shutdown complete.]
+[2026-03-01 23:47:02,498: INFO: server: Finished server process [15468]]
+[2026-03-01 23:47:17,023: INFO: server: Started server process [30652]]
+[2026-03-01 23:47:17,025: INFO: on: Waiting for application startup.]
+[2026-03-01 23:47:17,026: INFO: on: Application startup complete.]
+[2026-03-01 23:47:17,027: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-01 23:48:19,404: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:48:19,409: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:48:19,411: INFO: common: created directory at: artifacts]
+[2026-03-01 23:48:19,412: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 23:48:22,261: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 23, in predict
+    output = pipe(text, **gen_kwargs)[0]["summary_text"]
+             ~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\text_generation.py", line 293, in __call__
+    return super().__call__(text_inputs, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1274, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1281, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1173, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\text_generation.py", line 397, in _forward
+    output = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\generation\utils.py", line 2618, in generate
+    self._validate_generated_length(generation_config, input_ids_length, has_default_max_length)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\generation\utils.py", line 1700, in _validate_generated_length
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Input length of input_ids is 150, but `max_length` is set to 150. This can lead to unexpected behavior. You should consider increasing `max_length` or, better yet, setting `max_new_tokens`.
+[2026-03-01 23:52:16,685: INFO: server: Shutting down]
+[2026-03-01 23:52:16,795: INFO: on: Waiting for application shutdown.]
+[2026-03-01 23:52:16,796: INFO: on: Application shutdown complete.]
+[2026-03-01 23:52:16,798: INFO: server: Finished server process [30652]]
+[2026-03-01 23:52:39,077: INFO: server: Started server process [20680]]
+[2026-03-01 23:52:39,079: INFO: on: Waiting for application startup.]
+[2026-03-01 23:52:39,079: INFO: on: Application startup complete.]
+[2026-03-01 23:52:39,080: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-01 23:53:30,190: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:53:30,194: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:53:30,196: INFO: common: created directory at: artifacts]
+[2026-03-01 23:53:30,197: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-01 23:55:15,637: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 23, in predict
+    output = pipe(text, **gen_kwargs)[0]["summary_text"]
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'summary_text'
+[2026-03-01 23:57:41,958: INFO: server: Shutting down]
+[2026-03-01 23:57:42,061: INFO: on: Waiting for application shutdown.]
+[2026-03-01 23:57:42,062: INFO: on: Application shutdown complete.]
+[2026-03-01 23:57:42,062: INFO: server: Finished server process [20680]]
+[2026-03-01 23:58:06,283: INFO: server: Started server process [30308]]
+[2026-03-01 23:58:06,285: INFO: on: Waiting for application startup.]
+[2026-03-01 23:58:06,286: INFO: on: Application startup complete.]
+[2026-03-01 23:58:06,287: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-01 23:59:07,673: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-01 23:59:07,677: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-01 23:59:07,679: INFO: common: created directory at: artifacts]
+[2026-03-01 23:59:07,680: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-02 00:00:34,965: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 23, in predict
+    output = pipe(text, **gen_kwargs)[0]["summary"]
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'summary'
+[2026-03-02 14:14:07,757: INFO: server: Started server process [1216]]
+[2026-03-02 14:14:07,759: INFO: on: Waiting for application startup.]
+[2026-03-02 14:14:07,761: INFO: on: Application startup complete.]
+[2026-03-02 14:14:07,762: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-02 14:19:13,046: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-02 14:19:13,051: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-02 14:19:13,052: INFO: common: created directory at: artifacts]
+[2026-03-02 14:19:13,053: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-02 14:20:46,885: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 23, in predict
+    output = pipe(text, **gen_kwargs)[0]["summary"]
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'summary'
+[2026-03-02 14:26:07,876: INFO: server: Shutting down]
+[2026-03-02 14:26:07,987: INFO: on: Waiting for application shutdown.]
+[2026-03-02 14:26:07,988: INFO: on: Application shutdown complete.]
+[2026-03-02 14:26:07,989: INFO: server: Finished server process [1216]]
+[2026-03-02 14:26:30,734: INFO: server: Started server process [33560]]
+[2026-03-02 14:26:30,735: INFO: on: Waiting for application startup.]
+[2026-03-02 14:26:30,736: INFO: on: Application startup complete.]
+[2026-03-02 14:26:30,737: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-02 14:27:08,316: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-02 14:27:08,320: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-02 14:27:08,321: INFO: common: created directory at: artifacts]
+[2026-03-02 14:27:08,322: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-02 14:33:52,241: INFO: server: Shutting down]
+[2026-03-02 14:33:52,345: INFO: on: Waiting for application shutdown.]
+[2026-03-02 14:33:52,346: INFO: on: Application shutdown complete.]
+[2026-03-02 14:33:52,347: INFO: server: Finished server process [33560]]
+[2026-03-02 14:34:06,158: INFO: server: Started server process [30920]]
+[2026-03-02 14:34:06,159: INFO: on: Waiting for application startup.]
+[2026-03-02 14:34:06,160: INFO: on: Application startup complete.]
+[2026-03-02 14:34:06,161: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-02 14:35:17,862: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-02 14:35:17,866: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-02 14:35:17,867: INFO: common: created directory at: artifacts]
+[2026-03-02 14:35:17,869: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-02 14:39:06,473: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-02 14:39:06,475: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-02 14:39:06,477: INFO: common: created directory at: artifacts]
+[2026-03-02 14:39:06,477: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-02 14:45:50,349: INFO: server: Shutting down]
+[2026-03-02 14:45:50,460: INFO: on: Waiting for application shutdown.]
+[2026-03-02 14:45:50,463: INFO: on: Application shutdown complete.]
+[2026-03-02 14:45:50,464: INFO: server: Finished server process [30920]]
+[2026-03-02 14:46:12,304: INFO: server: Started server process [29572]]
+[2026-03-02 14:46:12,305: INFO: on: Waiting for application startup.]
+[2026-03-02 14:46:12,306: INFO: on: Application startup complete.]
+[2026-03-02 14:46:12,306: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-02 14:46:56,714: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-02 14:46:56,718: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-02 14:46:56,720: INFO: common: created directory at: artifacts]
+[2026-03-02 14:46:56,721: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-02 14:46:57,822: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 17, in predict
+    pipe = pipeline("text-summary", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+                                                   ~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+        f"Unknown task {task}, available tasks are {self.get_supported_tasks() + ['translation_XX_to_YY']}"
+    )
+KeyError: "Unknown task text-summary, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-03-02 14:49:22,346: INFO: server: Shutting down]
+[2026-03-02 14:49:22,451: INFO: on: Waiting for application shutdown.]
+[2026-03-02 14:49:22,453: INFO: on: Application shutdown complete.]
+[2026-03-02 14:49:22,454: INFO: server: Finished server process [29572]]
+[2026-03-02 14:49:38,047: INFO: server: Started server process [4204]]
+[2026-03-02 14:49:38,049: INFO: on: Waiting for application startup.]
+[2026-03-02 14:49:38,049: INFO: on: Application startup complete.]
+[2026-03-02 14:49:38,050: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-02 14:50:39,621: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-02 14:50:39,624: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-02 14:50:39,627: INFO: common: created directory at: artifacts]
+[2026-03-02 14:50:39,628: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-02 14:50:43,606: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dependant=dependant, values=values, is_coroutine=is_coroutine
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 40, in predict_route
+    raise e
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\app.py", line 37, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\sn774\Documents\Data Science\AWS sagemaker\mlops\github actions\Text summarization hugging face\src\textSummarizer\pipeline\prediction.py", line 17, in predict
+    pipe = pipeline("any-to-any", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 1006, in pipeline
+    raise e
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\pipelines\__init__.py", line 997, in pipeline
+    processor = AutoProcessor.from_pretrained(processor, _from_pipeline=task, **hub_kwargs, **model_kwargs)
+  File "C:\Users\sn774\.ai-navigator\conda\envs\summary\Lib\site-packages\transformers\models\auto\processing_auto.py", line 419, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized processing class in artifacts/model_trainer/pegasus-samsum-model. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes.
+[2026-03-02 14:53:04,181: INFO: server: Shutting down]
+[2026-03-02 14:53:04,289: INFO: on: Waiting for application shutdown.]
+[2026-03-02 14:53:04,291: INFO: on: Application shutdown complete.]
+[2026-03-02 14:53:04,292: INFO: server: Finished server process [4204]]
+[2026-03-02 14:53:16,265: INFO: server: Started server process [15544]]
+[2026-03-02 14:53:16,267: INFO: on: Waiting for application startup.]
+[2026-03-02 14:53:16,267: INFO: on: Application startup complete.]
+[2026-03-02 14:53:16,268: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-02 14:54:07,369: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-02 14:54:07,374: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-02 14:54:07,375: INFO: common: created directory at: artifacts]
+[2026-03-02 14:54:07,376: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-02 15:47:15,770: INFO: server: Shutting down]
+[2026-03-02 15:47:15,878: INFO: on: Waiting for application shutdown.]
+[2026-03-02 15:47:15,882: INFO: on: Application shutdown complete.]
+[2026-03-02 15:47:15,883: INFO: server: Finished server process [15544]]

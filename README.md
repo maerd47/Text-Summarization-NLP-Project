@@ -18,3 +18,8 @@ update the conponents
 update the pipeline
 update the main.py
 update the app.py
+
+
+!pip install --upgrade accelerate
+!pip uninstall -y transformers accelerate
+!pip install transformers accelerate
