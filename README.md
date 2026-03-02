@@ -1,5 +1,6 @@
 # This is Text summarization project
 
+conda deactivate
 
 conda create -n summary python>=3.9 -y
 
