@@ -36,3 +36,8 @@ update the app.py
 !pip uninstall -y transformers accelerate
 
 !pip install transformers accelerate
+
+
+pip install git-filter-repo
+
+git filter-repo --path model.pkl --invert-paths
